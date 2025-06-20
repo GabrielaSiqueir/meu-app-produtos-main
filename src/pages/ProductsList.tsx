@@ -48,7 +48,6 @@ export default function ProductsList() {
             <TableCell>Nome</TableCell>
             <TableCell>Descrição</TableCell>
             <TableCell>Preço</TableCell>
-            <TableCell>Quantidade</TableCell>
             <TableCell align="center">Ações</TableCell>
           </TableRow>
         </TableHead>
@@ -58,7 +57,6 @@ export default function ProductsList() {
               <TableCell>{p.nome}</TableCell>
               <TableCell>{p.descricao}</TableCell>
               <TableCell>R$ {p.preco.toFixed(2)}</TableCell>
-              <TableCell>{p.quantidade}</TableCell>
               <TableCell align="center">
                 <IconButton component={RouterLink} to={`/editar/${p.id}`} color="primary">
                   <Edit />
@@ -71,7 +69,7 @@ export default function ProductsList() {
           ))}
           {products.length === 0 && (
             <TableRow>
-              <TableCell colSpan={5} align="center">Nenhum produto cadastrado</TableCell>
+              <TableCell colSpan={4} align="center">Nenhum produto cadastrado</TableCell>
             </TableRow>
           )}
         </TableBody>
