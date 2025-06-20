@@ -5,7 +5,6 @@ import { createProduct, getProduct, updateProduct, Product } from '../services/a
 
 const initialState: Product = {
   nome: '',
-  descricao: '',
   preco: 0
 };
 
@@ -61,15 +60,6 @@ export default function ProductForm() {
             label="Nome"
             name="nome"
             value={product.nome}
-            onChange={handleChange}
-            fullWidth
-            margin="normal"
-            required
-          />
-          <TextField
-            label="Descrição"
-            name="descricao"
-            value={product.descricao}
             onChange={handleChange}
             fullWidth
             margin="normal"

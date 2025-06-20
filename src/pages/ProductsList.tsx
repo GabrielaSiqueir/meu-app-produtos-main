@@ -46,7 +46,6 @@ export default function ProductsList() {
         <TableHead>
           <TableRow>
             <TableCell>Nome</TableCell>
-            <TableCell>Descrição</TableCell>
             <TableCell>Preço</TableCell>
             <TableCell align="center">Ações</TableCell>
           </TableRow>
@@ -55,7 +54,6 @@ export default function ProductsList() {
           {products.map(p => (
             <TableRow key={p.id}>
               <TableCell>{p.nome}</TableCell>
-              <TableCell>{p.descricao}</TableCell>
               <TableCell>R$ {p.preco.toFixed(2)}</TableCell>
               <TableCell align="center">
                 <IconButton component={RouterLink} to={`/editar/${p.id}`} color="primary">
