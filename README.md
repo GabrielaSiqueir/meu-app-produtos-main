@@ -1,4 +1,4 @@
-# Meu App Produtos
+# Controle de Produtos
 
 Aplicativo React para cadastro, listagem, edição e exclusão de produtos, integrado com uma API REST externa.
 
